@@ -1,9 +1,9 @@
 pipeline{
         agent any
         stages{
-            stage("git checkout"){
+            stage("print hello word"){
                 steps{
-                   git --version  
+                  echo hello-git  
                 }
             }
         }
