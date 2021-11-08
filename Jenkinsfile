@@ -1,11 +1,10 @@
 pipeline{
-        agent any{
-            stages{
-            stage("print hello word"){
+        agent any 
+        stages{
+            stage("git checkout"){
                 steps{
-                  echo hello-git  
+                    git 'https://github.com/tinkusaini13/local' 
                 }
             }
         }
-   }
 }
