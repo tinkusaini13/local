@@ -3,17 +3,17 @@ pipeline{
         stages{
             stage("git checkout") {
                 steps{
-                    sh 'pwd' 
+                 sh  'ls /'
                 }
             }
                 stage("Check Git Version"){
                     steps{
-                       git '--version'
+                    sh 'git --version'
                     }
                 }
                 stage("Create a Directory"){
                     steps{
-                       mkdir  '/Jenkins-data'
+                    sh   'mkdir  /Jenkins-data'
                     }
                 }
         }
