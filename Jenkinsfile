@@ -1,10 +1,11 @@
 pipeline{
-        agent any
-        stages{
+        agent any{
+            stages{
             stage("print hello word"){
                 steps{
                   echo hello-git  
                 }
             }
         }
+   }
 }
