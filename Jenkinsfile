@@ -3,7 +3,8 @@ pipeline{
         stages{
             stage("git checkout"){
                 steps{
-                    git 'https://github.com/tinkusaini13/local'
+                   echo hello
+                        #git 'https://github.com/tinkusaini13/local'
                 }
             }
         }
